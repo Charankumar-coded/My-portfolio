@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinod Kumar | AI & ML Portfolio</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#050505] text-gray-100 font-sans overflow-x-hidden selection:bg-blue-500/30">
+    <!-- Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex justify-between items-center">
+            <a href="#" class="text-2xl font-display font-bold tracking-tighter">
+                V<span class="text-blue-500">iii</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-8">
+                <a href="#about" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">About</a>
+                <a href="#skills" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Skills</a>
+                <a href="#projects" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Projects</a>
+                <a href="#contact" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden glass-panel absolute top-full left-0 right-0 border-t border-white/5 py-4 px-6 flex-col gap-4">
+            <a href="#about" class="mobile-link text-base font-medium text-gray-300 hover:text-white block py-2">About</a>
+            <a href="#skills" class="mobile-link text-base font-medium text-gray-300 hover:text-white block py-2">Skills</a>
+            <a href="#projects" class="mobile-link text-base font-medium text-gray-300 hover:text-white block py-2">Projects</a>
+            <a href="#contact" class="mobile-link text-base font-medium text-gray-300 hover:text-white block py-2">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto space-y-32">
+        <!-- Hero -->
+        <section id="hero" class="min-h-[80vh] flex flex-col justify-center relative fade-in">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+            <div class="profile"><img src="profile.jpeg" alt="my profile picture" style="width: 350px; border-radius: 50%; margin: 0px 0px 10px 0px;"></div>
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-mono mb-6">
+                    <i data-lucide="terminal" class="w-4 h-4"></i>
+                    <span>AI & ML Engineering Student</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
+                    Hello! I'm <span class="text-gradient">Vinod Kumar</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-400 leading-relaxed mb-10 max-w-2xl">
+                    A passionate Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. I enjoy building intelligent systems, solving real-world problems with technology, and continuously learning new tools in AI and software development.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition-colors">
+                        View Projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg glass-panel text-white font-medium hover:bg-white/10 transition-colors">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="scroll-mt-24 fade-in">
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-8">About Me</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-6 text-gray-400 leading-relaxed text-lg">
+                    <p>I am a second-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. I have a strong interest in developing intelligent applications that solve real-world problems.</p>
+                    <p>I enjoy exploring technologies such as Machine Learning, Python, Web Development, and AI Agents. I actively participate in hackathons, technical events, and collaborative projects to improve my skills and gain practical experience.</p>
+                    <p>My goal is to become a skilled Software Engineer and AI Developer, building innovative solutions that positively impact society.</p>
+                    <p>Outside of technology, I enjoy reading books, exploring philosophical ideas, and spending time in nature, which helps me think creatively and stay inspired.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="glass-panel p-6 rounded-2xl flex flex-col gap-4 hover:bg-white/5 transition-colors">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                            <i data-lucide="cpu" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium text-gray-200">AI & ML Specialization</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl flex flex-col gap-4 hover:bg-white/5 transition-colors">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                            <i data-lucide="code-2" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium text-gray-200">Software Engineering</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl flex flex-col gap-4 hover:bg-white/5 transition-colors">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                            <i data-lucide="globe" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium text-gray-200">Web Development</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-2xl flex flex-col gap-4 hover:bg-white/5 transition-colors">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium text-gray-200">Continuous Learner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="scroll-mt-24 fade-in">
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-12">Technical Skills</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-panel p-8 rounded-3xl">
+                    <h3 class="text-xl font-display font-semibold mb-6 text-white">Programming Languages</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">Python</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">JavaScript</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">C / C++</span>
+                    </div>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl">
+                    <h3 class="text-xl font-display font-semibold mb-6 text-white">AI & Machine Learning</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">Machine Learning Basics</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">AI Agents</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">Data Analysis</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">Prompt Engineering</span>
+                    </div>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl">
+                    <h3 class="text-xl font-display font-semibold mb-6 text-white">Web Development</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">HTML</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">CSS</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">React</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">Git & GitHub</span>
+                    </div>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl">
+                    <h3 class="text-xl font-display font-semibold mb-6 text-white">Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">VS Code</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">GitHub</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">Google AI Studio</span>
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">Canva</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="scroll-mt-24 fade-in">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl md:text-4xl font-display font-bold">Featured Projects</h2>
+                <span class="text-2xl">🚀</span>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-panel p-8 rounded-3xl flex flex-col h-full group transition-transform hover:-translate-y-1 duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="bot" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-semibold mb-3 text-white">AI Agent – Think, Plan, Deliver</h3>
+                    <p class="text-gray-400 mb-6 flex-grow leading-relaxed">
+                        Developed an intelligent AI agent capable of analyzing tasks, planning solutions, and delivering results using advanced prompting techniques.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">AI Agents</span>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">Prompt Engineering</span>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">Python</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl flex flex-col h-full group transition-transform hover:-translate-y-1 duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="message-square" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-semibold mb-3 text-white">Digital Marketing Chatbot</h3>
+                    <p class="text-gray-400 mb-6 flex-grow leading-relaxed">
+                        Designed a chatbot to assist users with digital marketing strategies, tools, and learning resources.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">Chatbot</span>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">AI</span>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">NLP</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl flex flex-col h-full group transition-transform hover:-translate-y-1 duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="globe" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-semibold mb-3 text-white">Student Portfolio Website</h3>
+                    <p class="text-gray-400 mb-6 flex-grow leading-relaxed">
+                        Created a personal portfolio website to showcase projects, skills, and achievements using modern web technologies.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">HTML/CSS/JS</span>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">Tailwind CSS</span>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">Web Dev</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl flex flex-col h-full group transition-transform hover:-translate-y-1 duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-semibold mb-3 text-white">Hackathon AI Project</h3>
+                    <p class="text-gray-400 mb-6 flex-grow leading-relaxed">
+                        Participated in hackathons and built AI-based solutions within limited time to solve real-world challenges.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">Hackathon</span>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">Machine Learning</span>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-white/5 text-gray-400">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="scroll-mt-24 fade-in">
+            <div class="glass-panel rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-purple-600/10 rounded-full blur-[80px] -z-10 pointer-events-none"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-600/10 rounded-full blur-[80px] -z-10 pointer-events-none"></div>
+                
+                <div class="text-4xl mb-6">📬</div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Let's Connect</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
+                    I'm always open to collaboration, internships, and exciting projects. Feel free to reach out if you want to build something amazing together!
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="mailto:c.vinodkumar2114@gmail.com" class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white text-black font-medium hover:bg-gray-200 transition-colors">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        Email Me
+                    </a>
+                    <a href="https://github.com/vinodkumar-code" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-xl glass-panel text-white font-medium hover:bg-white/10 transition-colors">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        GitHub <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-400"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vinod-kumar-c-805457324/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-xl glass-panel text-white font-medium hover:bg-white/10 transition-colors">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        LinkedIn <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-400"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/10 py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 flex flex-col items-center text-center gap-6">
+            <div class="text-2xl">🌟</div>
+            <p class="text-xl font-display font-medium italic text-gray-300 max-w-xl">
+                “Building intelligent systems today for a smarter tomorrow.”
+            </p>
+            <div class="w-12 h-px bg-white/20"></div>
+            <p class="text-sm text-gray-500 font-mono">
+                © 2026 Viii | AI & ML Student Portfolio
+            </p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
+
