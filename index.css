@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
 body {
   margin: 0;
   min-width: 320px;
